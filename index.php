@@ -6,16 +6,16 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
 
 <?php
 $parola = $_GET["parola"];
-$paragrafo = "ciao forse stai leggendo questo testo, perchè è il testo più bello che si possa trovare tra tutti quelli che diconon di pubblicare un testo, 
-senza però sapere che non sono realmente capaci di scrivere un testo";
+$paragrafo = "ciao forse stai leggendo questo testo,$parola perchè è il testo più bello che si possa trovare tra tutti quelli che diconon di pubblicare un testo, 
+senza però sapere che $parola non sono realmente capaci di $parola scrivere un testo";
 
 $lunghezzaParagrafo = strlen($paragrafo);
 $paragrafoCorretto = $paragrafo;
 
 echo "la lunghezza di questo testo è : " . "=" . strlen($paragrafo);
 
-if(strpos($paragrafo, "testo") !== false ) {
-    $paragrafoCorretto = str_replace("testo", "***", $paragrafo);
+if(strpos($paragrafo, $parola = "casa") !== true ) {
+    $paragrafoCorretto = str_replace($parola = "casa", "***", $paragrafo);
 };
 
 ?>
