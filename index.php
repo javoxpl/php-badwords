@@ -5,6 +5,7 @@ Una parola da censurare viene passata dall'utente tramite parametro GET.
 Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (***) tutte le occorrenze della parola da censurare.
 
 <?php
+$parola = $_GET["parola"];
 $paragrafo = "ciao forse stai leggendo questo testo, perchè è il testo più bello che si possa trovare tra tutti quelli che diconon di pubblicare un testo, 
 senza però sapere che non sono realmente capaci di scrivere un testo";
 
